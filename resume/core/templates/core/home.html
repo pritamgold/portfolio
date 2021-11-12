@@ -1,0 +1,31 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+<div class=" mt-5 text-center">
+    <img src="{% static 'core/images/pritam.jpg'%}" alt="Profile pic" class="img-thumbnail" width="250px"
+    height="150px">
+</div>
+<div class="text-white mt-5 mx-5 text-justify mb-5">
+    <h1 class="font-weight-bold st-font">Hello,</h1>
+    <div class="px-4" style="line-height:2rem">
+        <p style="text-indent:100px;"> I am <b class="text-warning">Pritam Golder</b> having a 4 year
+        full-stack web development experience for global business. I offer the technical expertise you are 
+        seeking for your developer position.</p>
+        <p>Since earning may bachelor's degree from Daffodil International University, I have completed 
+            some great projects. In my former role as a student worker at the University of Rochester’s 
+            Technical Services department, I was responsible for troubleshooting a variety of technical 
+            issues for staff, assisting with server maintenance, and installing a wide range of equipment. 
+            While employed there, I assisted in the development and rollout of new department practices, 
+            and helped improve our ticket response time by 12%. I’m sure that this experience will help me 
+            pick up new skills and quickly excel as a technician at Mayflower
+        </p>
+        <p>
+            According to your requirements, I think I am well experienced to serve you as a developer.
+        </p>
+    </div>
+    <div class="text-center">
+        <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 m-5">Hire Me</a>
+        <a href="{% url 'contact' %}" class="btn btn-outline-info my-3 m-5">Contact</a>
+    </div>
+</div>
+{% endblock content %}
